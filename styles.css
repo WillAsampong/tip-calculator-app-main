@@ -11,13 +11,15 @@ body {
 }
 
 .logo {
-    padding: 50px;
+    padding: 60px;
+    position: relative;
 }
 
 .logo img {
-    /* border: 1px solid black; */
-    display: flex;
-    justify-content: center;
+    position: absolute;
+    top: 50%;
+    right: 30%;
+    transform: translate(-50%, -50%);
 }
 
 main .calculator-container {
@@ -86,7 +88,7 @@ main .calculator-container .bill p{
 }
 
 .number-of-people {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 .number-of-people p{
@@ -121,5 +123,55 @@ main .calculator-container .bill p{
     border-radius: 7px;
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 20px;
+}
+
+.tip-amount {
+    display: flex;
+    justify-content: space-between;
+}
+
+.tip-amount p b {
+    color: hsl(189, 41%, 97%);
+}
+
+.tip-amount p {
+    color:hsl(184, 14%, 56%)
+}
+
+.tip-per-person-amount {
+    font-size: 30px;
+    font-weight: 700;
+    color: hsl(172, 67%, 45%)
+}
+
+.total {
+    display: flex;
+    justify-content: space-between;
+}
+
+.total p b {
+    color: hsl(189, 41%, 97%);
+}
+
+.total p {
+    color: hsl(184, 14%, 56%)
+}
+
+.total-amount {
+    font-size: 30px;
+    font-weight: 700;
+    color:hsl(172, 67%, 45%);
+}
+
+.tip-amount-total-display .reset-button button{
+    width: 100%;
+    background-color: hsl(172, 67%, 45%);
+    color: hsl(183, 100%, 15%);
+    font-weight: 700;
+    font-size: 25px;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 0;
 }
