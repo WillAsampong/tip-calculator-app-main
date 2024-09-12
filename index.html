@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="./styles.css">
   <title>Frontend Mentor | Tip calculator app</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -17,12 +17,12 @@
 <body>
 
   <main>
-    <h1>Splitter</h1>
+    <div class="logo">
+      <img src="./images/logo.svg" alt="">
+    </div>
     <div class="calculator-container">
       <div class="bill">
-        <div class="bill-label">
           <p>Bill</p>
-        </div>
         <div class="bill-input">
           <span>
             <img src="./images/icon-dollar.svg" alt="">
@@ -32,16 +32,14 @@
       </div>
 
       <div class="select-tip">
-        <div class="select-tip-heading">
-          <p>Select tip %</p>
-        </div>
+        <p class="select-tip-heading">Select tip %</p>
         <div class="select-tips-grid">
           <button>5%</button>
           <button>10%</button>
           <button>15%</button>
           <button>25%</button>
           <button>50%</button>
-          <button>Custom</button>
+          <button class="custom">Custom</button>
         </div>
       </div>
 
@@ -57,12 +55,12 @@
 
       <div class="tip-amount-total-display">
         <div class="tip-amount">
-          <p><b>Tip amount</b>/ person</p>
-          <div class="tip-per-person-amount"></div>
+          <p><b>Tip amount</b><br>/ person</p>
+          <div class="tip-per-person-amount">$4.27</div>
         </div>
         <div class="total">
-          <p><b>Total</b> / person</p>
-          <div class="total-amount"></div>
+          <p><b>Total</b><br>/ person</p>
+          <div class="total-amount">$32.79</div>
         </div>
         <div class="reset-button">
           <button>reset</button>
@@ -70,6 +68,8 @@
       </div>
     </div>
   </main>
+
+  <script src="script.js"></script>
   
   <!-- <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 

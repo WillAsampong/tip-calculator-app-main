@@ -5,3 +5,121 @@
     padding: 0;
     font-family: "Space Mono", monospace;
 }
+
+body {
+    background-color: hsl(185, 41%, 84%);
+}
+
+.logo {
+    padding: 50px;
+}
+
+.logo img {
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: center;
+}
+
+main .calculator-container {
+    background-color: #ffffff;
+    height: 100vh;
+    border-radius: 10px 10px 0 0;
+    padding: 25px;
+}
+
+main .calculator-container .bill p{
+    color: hsl(184, 14%, 56%);
+    font-weight: 600;
+}
+
+.bill .bill-input {
+    background-color: hsl(189, 41%, 97%);
+    padding: 10px 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 7px;
+    margin-top: 5px;
+}
+
+.bill .bill-input input {
+    width: 90%;
+    border: none;
+    outline: none;
+    background-color: hsl(189, 41%, 97%);
+    text-align: right;
+    color: hsl(183, 100%, 15%);
+    font-size: 20px;
+    font-weight: 700;
+    
+}
+
+.select-tip {
+    margin: 20px 0;
+}
+
+.select-tip p {
+    color: hsl(184, 14%, 56%);
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.select-tips-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.select-tips-grid button {
+    background-color: hsl(183, 100%, 15%);
+    color: #ffffff;
+    border: none;
+    padding: 10px;
+    border-radius: 7px;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.select-tips-grid .custom {
+    background-color: hsl(189, 41%, 97%);
+    color: hsl(184, 14%, 56%);
+}
+
+.number-of-people {
+    margin-bottom: 20px;
+}
+
+.number-of-people p{
+    color: hsl(184, 14%, 56%);
+    font-weight: 600;
+}
+
+.num-of-people-input {
+    background-color: hsl(189, 41%, 97%);
+    padding: 10px 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 7px;
+    margin-top: 5px;
+}
+
+.num-of-people-input input {
+    width: 90%;
+    border: none;
+    outline: none;
+    background-color: hsl(189, 41%, 97%);
+    text-align: right;
+    color: hsl(183, 100%, 15%);
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.tip-amount-total-display {
+    background-color: hsl(183, 100%, 15%);
+    padding: 15px;
+    border-radius: 7px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
