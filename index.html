@@ -16,29 +16,64 @@
 </head>
 <body>
 
-  Bill
+  <main>
+    <h1>Splitter</h1>
+    <div class="calculator-container">
+      <div class="bill">
+        <div class="bill-label">
+          <p>Bill</p>
+        </div>
+        <div class="bill-input">
+          <span>
+            <img src="./images/icon-dollar.svg" alt="">
+          </span>
+          <input type="text" placeholder="0.00">
+        </div>
+      </div>
 
-  Select Tip %
-  5%
-  10%
-  15%
-  25%
-  50%
-  Custom
+      <div class="select-tip">
+        <div class="select-tip-heading">
+          <p>Select tip %</p>
+        </div>
+        <div class="select-tips-grid">
+          <button>5%</button>
+          <button>10%</button>
+          <button>15%</button>
+          <button>25%</button>
+          <button>50%</button>
+          <button>Custom</button>
+        </div>
+      </div>
 
-  Number of People
+      <div class="number-of-people">
+        <p>Number of people</p>
+        <div class="num-of-people-input">
+          <span>
+            <img src="./images/icon-person.svg" alt="">
+          </span>
+          <input type="text" placeholder="0">
+        </div>
+      </div>
 
-  Tip Amount
-  / person
-
-  Total
-  / person
-
-  Reset
+      <div class="tip-amount-total-display">
+        <div class="tip-amount">
+          <p><b>Tip amount</b>/ person</p>
+          <div class="tip-per-person-amount"></div>
+        </div>
+        <div class="total">
+          <p><b>Total</b> / person</p>
+          <div class="total-amount"></div>
+        </div>
+        <div class="reset-button">
+          <button>reset</button>
+        </div>
+      </div>
+    </div>
+  </main>
   
-  <div class="attribution">
+  <!-- <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
-  </div>
+  </div> -->
 </body>
 </html>
