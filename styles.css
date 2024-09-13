@@ -18,7 +18,7 @@ body {
 .logo img {
     position: absolute;
     top: 50%;
-    right: 30%;
+    right: 28%;
     transform: translate(-50%, -50%);
 }
 
@@ -83,8 +83,13 @@ main .calculator-container .bill p{
 }
 
 .select-tips-grid .custom {
+    border: none;
+    border-radius: 7px;
     background-color: hsl(189, 41%, 97%);
     color: hsl(184, 14%, 56%);
+    text-align: center;
+    font-weight: 700;
+    outline: none;
 }
 
 .number-of-people {
