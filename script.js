@@ -26,6 +26,13 @@ const tipCalculation = () => {
         });
     });
 
+    // customTip.addEventListener('input', () => {
+    //     const tipPercentage = parseFloat(customTip.value) / 100;
+    //     const tipAmount = tipOnBill(tipPercentage);
+    //     const totalAmountValue = totalAmountPerPerson(tipPercentage);
+    //     updateDisplay(tipAmount, totalAmountValue);
+    // });
+
     const tipOnBill = (tipPercentage) => {
         let bill = parseFloat(billInput.value);
         let people = parseFloat(numOfPeople.value);

@@ -12,17 +12,10 @@ body {
 
 .logo {
     padding: 60px;
-    position: relative;
-}
-
-.logo img {
-    position: absolute;
-    top: 0;
-    right: 50%;
-    transform: translate(-10%, 50%);
     display: flex;
     justify-content: center;
 }
+
 
 main .calculator-container {
     background-color: #ffffff;
@@ -75,7 +68,7 @@ main .calculator-container .bill p{
 
 .select-tips-grid {
     display: grid;
-    grid-template-columns: repeat(2, 150px);
+    grid-template-columns: repeat(2, 1fr);
     gap: 10px;
 }
 
@@ -118,7 +111,7 @@ main .calculator-container .bill p{
     justify-content: center;
 }
 
-.num-of-people-label .error {
+.error {
     color: red;
 }
 
@@ -226,21 +219,20 @@ main .calculator-container .bill p{
     body{
         position: relative;  
     } 
-
-    main {
-        position: absolute;
-        left: 0;
-        top: 0;
-        transform: translate(50%, 0%);
-    }
     
     .calculator-container {
+        margin: 0 auto;
+        width: 70%;
         padding: 30px;
-        width: 100%;
         display: flex;
         justify-content: space-around;
         gap: 20px;
-        border-radius: 10px;
+        /* border-radius: 10px; */
+    }
+
+    .select-tips-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
     }
 
     .figure-inputs {
@@ -249,5 +241,12 @@ main .calculator-container .bill p{
 
     .tip-amount-total-display {
         flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .tip-amount-total-display .amounts-display {
+        gap: 10px;
     }
 }
