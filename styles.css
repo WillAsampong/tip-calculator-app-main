@@ -92,7 +92,7 @@ main .calculator-container .bill p{
     border: none;
     border-radius: 7px;
     background-color: hsl(189, 41%, 97%);
-    color: hsl(184, 14%, 56%);
+    color: hsl(186, 14%, 43%);
     text-align: center;
     font-weight: 700;
     outline: none;
@@ -104,14 +104,13 @@ main .calculator-container .bill p{
 
 .number-of-people {
     margin-bottom: 30px;
-}
-
-.num-of-people-label {
-    display: flex;
-    justify-content: center;
+    position: relative;
 }
 
 .error {
+    position: absolute;
+    right: 5px;
+    top: 0;
     color: red;
 }
 
@@ -169,7 +168,7 @@ main .calculator-container .bill p{
 }
 
 .tip-per-person-amount {
-    font-size: 30px;
+    font-size: 40px;
     font-weight: 700;
     color: hsl(172, 67%, 45%)
 }
@@ -188,7 +187,7 @@ main .calculator-container .bill p{
 }
 
 .total-amount {
-    font-size: 30px;
+    font-size: 40px;
     font-weight: 700;
     color:hsl(172, 67%, 45%);
 }
@@ -210,10 +209,10 @@ main .calculator-container .bill p{
     background-color: hsl(185, 41%, 84%);
 }
 
-.reset-button button:empty {
+/* .reset-button button:empty {
     background-color: hsl(184, 14%, 56%);
     color: hsl(186, 14%, 43%);
-}
+} */
 
 @media screen and (min-width: 700px) {
     body{
@@ -246,7 +245,7 @@ main .calculator-container .bill p{
         justify-content: space-between;
     }
 
-    .tip-amount-total-display .amounts-display {
-        gap: 10px;
+    .tip-amount {
+        margin-bottom: 20px;
     }
 }

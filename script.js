@@ -1,6 +1,6 @@
 const billInput = document.querySelector('.bill-input input');
 const tips = document.querySelectorAll('.select-tips-grid button');
-const customTip = document.querySelector('.select-tips-grid custom');
+const customTip = document.querySelector('.select-tips-grid .custom');
 const numOfPeople = document.querySelector('.num-of-people-input input');
 const numOfPeopleCont = document.querySelector('.num-of-people-input')
 const error = document.querySelector('.error');
@@ -26,12 +26,13 @@ const tipCalculation = () => {
         });
     });
 
-    // customTip.addEventListener('input', () => {
-    //     const tipPercentage = parseFloat(customTip.value) / 100;
-    //     const tipAmount = tipOnBill(tipPercentage);
-    //     const totalAmountValue = totalAmountPerPerson(tipPercentage);
-    //     updateDisplay(tipAmount, totalAmountValue);
-    // });
+    customTip.addEventListener('input', () => {
+        validateInputs();
+        const tipPercentage = parseFloat(customTip.value) / 100;
+        const tipAmount = tipOnBill(tipPercentage);
+        const totalAmountValue = totalAmountPerPerson(tipPercentage);
+        updateDisplay(tipAmount, totalAmountValue);
+    });
 
     const tipOnBill = (tipPercentage) => {
         let bill = parseFloat(billInput.value);
