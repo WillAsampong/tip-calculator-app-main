@@ -17,14 +17,16 @@ body {
 
 .logo img {
     position: absolute;
-    top: 50%;
-    right: 28%;
-    transform: translate(-50%, -50%);
+    top: 0;
+    right: 50%;
+    transform: translate(-10%, 50%);
+    display: flex;
+    justify-content: center;
 }
 
 main .calculator-container {
     background-color: #ffffff;
-    height: 100vh;
+    max-height: 100vh;
     border-radius: 10px 10px 0 0;
     padding: 25px;
 }
@@ -42,6 +44,11 @@ main .calculator-container .bill p{
     align-items: center;
     border-radius: 7px;
     margin-top: 5px;
+}
+
+.bill .bill-input:hover, .bill-input input:hover {
+    border: 1px solid hsl(172, 67%, 45%);
+    cursor: pointer;
 }
 
 .bill .bill-input input {
@@ -68,7 +75,7 @@ main .calculator-container .bill p{
 
 .select-tips-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 150px);
     gap: 10px;
 }
 
@@ -82,6 +89,12 @@ main .calculator-container .bill p{
     font-size: 20px;
 }
 
+.select-tips-grid button:hover {
+    background-color: hsl(172, 67%, 45%);
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
 .select-tips-grid .custom {
     border: none;
     border-radius: 7px;
@@ -92,8 +105,21 @@ main .calculator-container .bill p{
     outline: none;
 }
 
+.select-tips-grid .custom:hover {
+    border: 1px solid hsl(172, 67%, 45%);
+}
+
 .number-of-people {
     margin-bottom: 30px;
+}
+
+.num-of-people-label {
+    display: flex;
+    justify-content: center;
+}
+
+.num-of-people-label .error {
+    color: red;
 }
 
 .number-of-people p{
@@ -120,6 +146,11 @@ main .calculator-container .bill p{
     color: hsl(183, 100%, 15%);
     font-size: 20px;
     font-weight: 700;
+}
+
+.num-of-people-input:hover {
+    border: 1px solid hsl(172, 67%, 45%);
+    cursor: pointer;
 }
 
 .tip-amount-total-display {
@@ -179,4 +210,44 @@ main .calculator-container .bill p{
     border: none;
     border-radius: 5px;
     padding: 5px 0;
+}
+
+.reset-button button:hover {
+    cursor: pointer;
+    background-color: hsl(185, 41%, 84%);
+}
+
+.reset-button button:empty {
+    background-color: hsl(184, 14%, 56%);
+    color: hsl(186, 14%, 43%);
+}
+
+@media screen and (min-width: 700px) {
+    body{
+        position: relative;  
+    } 
+
+    main {
+        position: absolute;
+        left: 0;
+        top: 0;
+        transform: translate(50%, 0%);
+    }
+    
+    .calculator-container {
+        padding: 30px;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        gap: 20px;
+        border-radius: 10px;
+    }
+
+    .figure-inputs {
+        flex: 1;
+    }
+
+    .tip-amount-total-display {
+        flex: 1;
+    }
 }
